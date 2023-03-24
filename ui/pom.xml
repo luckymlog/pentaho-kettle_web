@@ -25,7 +25,7 @@
 
     <!-- Pentaho dependencies -->
     <kettle.version>9.0.0.0-423</kettle.version>
-    <pentaho-vfs-browser.version>${project.version}</pentaho-vfs-browser.version>
+    <pentaho-vfs-browser.version>${kettle.version}</pentaho-vfs-browser.version>
     <pentaho-capability-manager.version>${kettle.version}</pentaho-capability-manager.version>
 
     <!-- Third-party dependencies -->
@@ -61,13 +61,18 @@
       <groupId>pentaho-kettle</groupId>
       <artifactId>kettle-dbdialog</artifactId>
       <version>${kettle.version}</version>
-      <exclusions>
+      <!-- <exclusions>
         <exclusion>
           <groupId>org.eclipse.swt</groupId>
           <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
         </exclusion>
-      </exclusions>
+      </exclusions> -->
     </dependency>
+    <!-- <dependency>
+     	<groupId>org.eclipse.swt</groupId>
+          <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
+          <version>4.6</version>
+    </dependency> -->
     <dependency>
       <groupId>pentaho-kettle</groupId>
       <artifactId>webspoon-security</artifactId>
@@ -88,7 +93,7 @@
     <dependency>
       <groupId>org.pentaho</groupId>
       <artifactId>commons-xul-swt</artifactId>
-      <version>${project.version}</version>
+      <version>${project.parent.version}</version>
       <exclusions>
         <exclusion>
           <groupId>org.eclipse</groupId>
@@ -132,7 +137,7 @@
     <dependency>
       <groupId>org.eclipse.rap</groupId>
       <artifactId>org.eclipse.rap.fileupload</artifactId>
-      <version>${rap.version}</version>
+      <version>${rap.version}-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -253,7 +258,7 @@
     <dependency>
       <groupId>org.eclipse.rap</groupId>
       <artifactId>org.eclipse.rap.rwt.testfixture</artifactId>
-      <version>${rap.version}-SNAPSHOT</version>
+      <version>${rap.version}</version>
       <scope>test</scope>
       <exclusions>
         <exclusion>

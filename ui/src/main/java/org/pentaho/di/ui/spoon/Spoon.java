@@ -1121,6 +1121,18 @@ public class Spoon extends ApplicationWindow implements AddUndoPositionInterface
       public void shellClosed( ShellEvent e ) {
         // Do nothing
       }
+
+	@Override
+	public void shellDeiconified(ShellEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void shellIconified(ShellEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
     } );
   }
 

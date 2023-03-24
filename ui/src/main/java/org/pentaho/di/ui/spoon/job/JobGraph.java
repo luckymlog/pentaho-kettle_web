@@ -3033,7 +3033,7 @@ public class JobGraph extends AbstractGraph implements XulEventHandler, Redrawab
       }
 
       Image image = swtImage.getAsBitmapForSize( getDisplay(), Math.round( iconsize * magnification ), Math.round( iconsize * magnification ) );
-      jsonNode.add( "img",  image.internalImage.getResourceName() );
+//      jsonNode.add( "img",  image.internalImage.getResourceName() );
       jsonNodes.add( node.getName(), jsonNode );
     } );
     canvas.setData( "nodes", jsonNodes );

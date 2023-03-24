@@ -3397,7 +3397,7 @@ public class TransGraph extends AbstractGraph implements XulEventHandler, Redraw
         im = GUIResource.getInstance().getImagesSteps().get( step.getStepID() )
         .getAsBitmapForSize( getDisplay(), Math.round( iconsize * magnification ), Math.round( iconsize * magnification ) );
       }
-      jsonNode.add( "img",  im.internalImage.getResourceName() );
+//      jsonNode.add( "img",  im.internalImage.getResourceName() );
       jsonNodes.add( step.getName(), jsonNode );
     } );
     canvas.setData( "nodes", jsonNodes );

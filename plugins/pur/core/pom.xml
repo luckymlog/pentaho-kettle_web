@@ -81,6 +81,7 @@
     <dependency>
       <groupId>org.pentaho</groupId>
       <artifactId>commons-xul-swt</artifactId>
+       <version>${pdi.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
